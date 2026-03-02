@@ -1,7 +1,7 @@
 body {
     font-family: 'Poppins', Arial, sans-serif;
     color: #333;
-    background-color: #fffafc; /* soft pink background */
+    background-color: #fffafc; 
 }
 header {
   background: linear-gradient(135deg, #ff80ab, #ff4081);
@@ -24,7 +24,7 @@ nav a {
     font-weight: bold;
 }
 nav a:hover {
-    color: #ffeb3b; /* gold highlight */
+    color: #ffeb3b; 
 }
 main img {
     max-width: 100%;
@@ -33,7 +33,7 @@ main img {
     margin: 20px 0;
 }
 main {
-  background-color: #fffafc; /* soft pink background */
+  background-color: #fffafc; 
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -92,13 +92,13 @@ main a[href^="mailto:"]
     background-color: #e91e63;
 }
 .catalogue-img {
-  max-width: 400px;   /* keeps it from being too big */
+  max-width: 400px;   
   height: auto;
   display: block;
-  margin: 20px auto;  /* centers it */
-  border: 4px solid #ff4081; /* stylish border */
+  margin: 20px auto;  
+  border: 4px solid #ff4081; 
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* soft shadow */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
 }
 
 

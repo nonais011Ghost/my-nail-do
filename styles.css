@@ -1,43 +1,113 @@
-body {
-    font-family: 'Poppins', sans-serif;
-    background: #fff6fb;
-    color: #333;
+/* ========== Base & Theme ========== */
+:root{
+  --bg: #fff6fb;
+  --text: #333333;
+  --muted: #6c757d;
+  --accent: #ff4081;   /* Picked via color picker */
+  --accent-2: #ff80ab;
+  --dark: #121212;
+  --card-bg: #ffffff;
+  --border: #f0e6ee;
 }
 
-/* Pink brand theme */
-.btn-pink {
-    background: #ff5c94;
-    color: white;
-    border-radius: 8px;
-}
-.btn-pink:hover {
-    background: #ff2d7a;
+[data-theme="dark"]{
+  --bg: #0f0f13;
+  --text: #eaeaea;
+  --muted: #b0b0b0;
+  --card-bg: #151821;
+  --border: #232838;
 }
 
-/* Hero section */
-.hero {
-    background: linear-gradient(135deg, #ff80ab, #ff4081);
-    padding: 120px 20px;
-    color: white;
+*{ box-sizing: border-box; }
+html, body { height: 100%; }
+body{
+  font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
 }
 
-/* Cards */
-.card {
-    border-radius: 12px;
+/* ========== Helpers ========== */
+.text-accent{ color: var(--accent) !important; }
+.border-accent{ border-color: var(--accent) !important; }
+.btn-accent{
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: .6rem 1rem;
+}
+.btn-accent:hover{ filter: brightness(0.95); }
+.btn-outline-accent{
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  border-radius: 10px;
+}
+.btn-outline-accent:hover{
+  background: var(--accent);
+  color: #fff;
+}
+.section-title{
+  font-weight: 700;
+  color: var(--accent);
 }
 
-/* Footer */
-footer {
-    margin-top: 50px;
+/* ========== Navbar ========== */
+.navbar-brand{ font-weight: 700; letter-spacing: .2px; }
+.logo-dot{
+  width: 14px; height: 14px; display: inline-block; border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
 }
 
-/* Navbar */
-.navbar-brand {
-    font-size: 1.4rem;
+/* Active link highlight */
+.nav-link.active, .nav-link:hover{ color: var(--accent) !important; }
+
+/* ========== Hero ========== */
+.hero{
+  min-height: 52vh;
+  background: linear-gradient(135deg, var(--accent-2), var(--accent));
+  padding: 80px 0;
 }
 
-/* Tables */
-table th {
-    background: #ff80ab;
-    color: white;
+/* ========== Cards & Sections ========== */
+.card{ background: var(--card-bg); border: 1px solid var(--border); border-radius: 16px; }
+.card .price{ font-weight: 700; color: var(--accent); }
+.service-card .card-footer{ border-top: 1px solid var(--border); }
+.feature-card{
+  background: var(--card-bg); border: 1px solid var(--border); border-radius: 16px;
+  transition: transform .2s ease, box-shadow .2s ease;
 }
+.feature-card:hover{ transform: translateY(-3px); box-shadow: 0 10px 24px rgba(0,0,0,.1); }
+
+/* ========== Table Accent ========== */
+.table-accent{ background: var(--accent); }
+
+/* ========== Footer ========== */
+.footer{ color: #fff; }
+.footer .socials a{ font-size: 1.25rem; }
+
+/* ========== Gallery ========== */
+.gallery-grid img{ width: 100%; height: 100%; object-fit: cover; }
+
+/* ========== Floating WhatsApp ========== */
+.whatsapp-float{
+  position: fixed; right: 16px; bottom: 16px; z-index: 1050;
+  background: #25D366; color: #fff; width: 56px; height: 56px;
+  display: grid; place-items: center; border-radius: 50%;
+  box-shadow: 0 8px 18px rgba(0,0,0,.2);
+  transition: transform .2s ease;
+}
+.whatsapp-float:hover{ transform: translateY(-2px); }
+
+/* ========== Forms ========== */
+.form-control, .form-select, .btn{ border-radius: 10px; }
+
+/* ========== Lightbox Modal ========== */
+#lightboxModal .modal-content{ background: rgba(0,0,0,.85) !important; }
+
+/* ========== Animations (subtle) ========== */
+.fade-in-up{
+  opacity: 0; transform: translateY(12px);
+  animation: fadeUp .6s ease .1s forwards;
+}
+@keyframes fadeUp{ to{ opacity: 1; transform: translateY(0); } }

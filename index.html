@@ -1,55 +1,73 @@
 <!DOCTYPE html>
- <html lang="en">
-     <head>
-         <meta charset="UTF" -8">
-         <meta name=" ="viewport" content= width=device-width, initial-scale=1.0">
-         <title>Ria's Nail Do</title>
-       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-         <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Ria's Corner</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>  
-</header>
-<main class="container my-5">
-  <div class="row">
-    <div class="col-md-8">
-      <h2>Welcome to Ria's Nail Do Website!</h2>
-      <p>This is a Ria's Nail Do where beauty meets passion.</p>
-      <p>Here's a picture of our catalogue:</p>
-      <img src="catal.jpg" alt="Catalogue" class="img-fluid catalogue-img">
-    </div>
-    <div class="col-md-4">
-  
-    </div>
-  </div>
-</main>
-<footer>
-  <p>&copy;2025 Maria's Webpage. All rights reserved.
-      </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ria's Nail Do</title>
 
+    https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css
+    https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap
+    styles.css
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container">
+        index.htmlRia's Corner</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">index.htmlHome</a></li>
+                <li class="nav-item">about.htmlAbout</a></li>
+                <li class="nav-item">contact.htmlContact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="container text-center">
+        <h1 class="fw-bold">Where Beauty Meets Passion</h1>
+        <p class="lead mt-3">Professional Nails • Quality Service • Affordable Prices</p>
+        <button class="btn btn-lg btn-pink mt-3" data-bs-toggle="modal" data-bs-target="#appointmentModal">
+            Book an Appointment
+        </button>
+    </div>
+</section>
+
+<!-- CATALOG SECTION -->
+<section class="container my-5">
+    <h2 class="text-center mb-4">Our Catalogue</h2>
+    catal.jpg
+</section>
+
+<!-- APPOINTMENT MODAL -->
+<div class="modal fade" id="appointmentModal">
+    <div class="modal-dialog">
+        <div class="modal-content p-4">
+            <h3 class="text-center mb-3">Book an Appointment</h3>
+            <form>
+                <input class="form-control mb-3" placeholder="First Name">
+                <input class="form-control mb-3" placeholder="Last Name">
+                <input type="date" class="form-control mb-3">
+                <input type="time" class="form-control mb-3">
+                <button class="btn btn-pink w-100">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="text-center py-3 bg-dark text-white">
+    © 2025 Ria's Corner • All Rights Reserved
+</footer>
+
+https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js
 </body>
 </html>

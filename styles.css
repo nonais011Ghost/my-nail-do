@@ -5,6 +5,8 @@
   --muted: #6c757d;
   --accent: #ff4081;   /* Picked via color picker */
   --accent-2: #ff80ab;
+  --bg-image: url('tuscany.jpeg');
+  --bg-overlay: rgba(255,255,255,0.62);
   --dark: #121212;
   --card-bg: #ffffff;
   --border: #f0e6ee;
@@ -16,13 +18,20 @@
   --muted: #b0b0b0;
   --card-bg: #151821;
   --border: #232838;
+  --bg-overlay: rgba(0,0,0,0.6);
 }
 
 *{ box-sizing: border-box; }
 html, body { height: 100%; }
 body{
   font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  background: var(--bg);
+  background-color: var(--bg);
+  /* layered background: overlay + image (fallback to color) */
+  background-image: linear-gradient(var(--bg-overlay), var(--bg-overlay)), var(--bg-image);
+  background-size: cover, cover;
+  background-position: center center, center center;
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: fixed, fixed;
   color: var(--text);
   line-height: 1.6;
   transition: background-color .25s ease, color .25s ease;

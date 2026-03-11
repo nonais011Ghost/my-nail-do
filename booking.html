@@ -5,28 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Book an Appointment – Ria's Nail Do</title>
 
-  https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
-  https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css
-  https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap
-  styles.css
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
 </head>
 <body>
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
     <div class="container">
-      index.html
-        <span class="logo-dot me-2"></span> Ria's Corner
-      </a>
+      <a class="navbar-brand" href="index.html">Ria's Corner <span class="logo-dot ms-2"></span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button>
       <div id="navMenu" class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">index.htmlHome</a></li>
-          <li class="nav-item">about.htmlAbout</a></li>
-          <li class="nav-item">services.htmlServices</a></li>
-          <li class="nav-item">gallery.htmlGallery</a></li>
-          <li class="nav-item">booking.htmlBook</a></li>
-          <li class="nav-item">contact.htmlContact</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link active" href="booking.html">Book</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
         <div class="d-flex ms-lg-3 align-items-center gap-2">
           <button id="themeToggle" class="btn btn-outline-light btn-sm"><i class="bi bi-moon-stars"></i></button>
@@ -86,13 +84,13 @@
 
           <div class="d-flex flex-wrap gap-2 mt-4">
             <!-- Email submit via mailto (fallback if no backend) -->
-            <a id="emailSubmit" class="btn btn-accent">
+            <button id="emailSubmit" type="button" class="btn btn-accent">
               <i class="bi bi-envelope-paper"></i> Send Booking via Email
-            </a>
+            </button>
             <!-- WhatsApp submit -->
-            <a id="waSubmit" class="btn btn-success">
+            <button id="waSubmit" type="button" class="btn btn-success">
               <i class="bi bi-whatsapp"></i> Send via WhatsApp
-            </a>
+            </button>
           </div>
           <small class="text-muted d-block mt-2">You can also message us directly on WhatsApp using the green button.</small>
         </form>
@@ -103,13 +101,19 @@
   <footer class="footer mt-5 py-4 bg-dark text-white">
     <div class="container d-flex justify-content-between align-items-center">
       <div>© 2025 Ria's Corner</div>
-      <div class="socials">
-        #<i class="bi bi-instagram"></i></a>
-        #<i class="bi bi-facebook"></i></a>
-        https://wa.me/26760000000<i class="bi bi-whatsapp"></i></a>
-      </div>
+        <div class="socials">
+          <a class="text-white me-3" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+          <a class="text-white me-3" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+          <a class="text-white" href="https://wa.me/26760000000" target="_blank" rel="noopener noreferrer"><i class="bi bi-whatsapp"></i></a>
+        </div>
     </div>
   </footer>
+    <a class="btn btn-success position-fixed bottom-0 end-0 m-3 rounded-circle d-flex align-items-center justify-content-center" href="https://wa.me/26760000000?text=Hi%20Ria%2C%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+      <i class="bi bi-whatsapp fs-4 text-white"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
 
   https://wa.me/26760000000?text=Hi%20Ria%2C%20I%27d%20like%20to%20book%20an%20appointment.<i class="bi bi-whatsapp"></i></a>
 
